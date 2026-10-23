@@ -1,0 +1,191 @@
+# ===== VOTRE PROFIL — c'est le seul fichier à modifier =====
+# Profil : stage de master GAED (géographie, aménagement, environnement)
+# Zones : Rouen/Normandie · Toulouse/Occitanie · Nantes/Loire · Castres/Tarn
+
+# ---------- 1. Recherches lancées sur France Travail ----------
+# Une requête par ligne, combinée avec chaque département ci-dessous.
+recherches:
+  - "stage environnement"
+  - "stagiaire"
+  - "chargé d'études"
+  - "chargé de mission"
+  - "géomaticien"
+  - "SIG"
+  - "technicien de rivière"
+  - "Natura 2000"
+  - "zones humides"
+  - "GEMAPI"
+  - "biodiversité"
+  - "aménagement du territoire"
+
+# 76 Seine-Maritime, 27 Eure, 31 Haute-Garonne, 44 Loire-Atlantique, 81 Tarn
+departements: ["76", "27", "31", "44", "81"]
+
+types_contrat: []
+alternance_uniquement: false
+
+# ---------- 2. Autres sources (flux RSS) ----------
+# Ajoutez ici vos flux Google Alerts (option "Envoyer à : Flux RSS").
+# Une source qui ne répond pas est simplement ignorée.
+flux_rss:
+  - "https://orientation-environnement.fr/feed/"
+# Pour les flux RSS (sans filtre géographique), exiger un lieu de la liste "lieux" ?
+lieu_obligatoire_rss: true
+
+# ---------- 3. Filtres ----------
+# L'offre doit contenir AU MOINS UN de ces mots (titre ou description)
+mots_obligatoires:
+  - stage
+  - stagiaire
+  - offre de stage
+  - stage master
+  - stage 2027
+  - convention de stage
+  - gratification
+
+# Offre ignorée si l'un de ces mots est dans le TITRE
+mots_exclus:
+  - alternance
+  - apprentissage
+  - apprenti
+  - CDI
+
+# ---------- 4. Notation ----------
+# +3 points : vos métiers et cœurs de compétence
+mots_cles_forts:
+  - chargé d'études
+  - chargée d'études
+  - chargé de mission
+  - chargée de mission
+  - assistant chef de projet
+  - technicien de rivière
+  - animateur Natura 2000
+  - animateur SAGE
+  - géomaticien
+  - géomaticienne
+  - chargé de mission GEMAPI
+  - chargé de mission biodiversité
+  - chargé de mission climat
+  - diagnostic territorial
+  - état initial de l'environnement
+  - étude d'impact
+  - gestion de l'eau
+  - milieux aquatiques
+  - zones humides
+  - inventaire zones humides
+  - risque inondation
+  - trame verte et bleue
+  - atlas de la biodiversité communale
+  - adaptation au changement climatique
+  - QGIS
+  - analyse spatiale
+
+# +1 point : thématiques, outils, structures et territoires
+mots_cles_bonus:
+  - géographie
+  - aménagement du territoire
+  - environnement
+  - développement durable
+  - biodiversité
+  - éducation à l'environnement
+  - sciences participatives
+  - concertation
+  - enquête de terrain
+  - cartographie
+  - RStudio
+  - syndicat de rivière
+  - agence de l'eau
+  - Natura 2000
+  - Agence de l'eau Seine-Normandie
+  - GIP Seine-Aval
+  - CEN Normandie
+  - PNR Boucles de la Seine Normande
+  - PNR du Perche
+  - Agence de l'eau Adour-Garonne
+  - SMEAG
+  - Nature En Occitanie
+  - CEN Occitanie
+  - PNR des Pyrénées Ariégeoises
+  - GIP Loire Estuaire
+  - PNR de Brière
+  - Bretagne Vivante
+  - LPO 44
+  - CPIE Loire Océane
+  - Agence de l'eau Loire-Bretagne
+  - Syndicat Mixte du Bassin de l'Agout
+  - SAGE Agout
+  - PAPI Agout
+  - PNR du Haut-Languedoc
+  - CPIE des Pays Tarnais
+  - LPO Tarn
+
+# +1 point : sigles, reconnus UNIQUEMENT en majuscules (évite "tri", "ens"...)
+sigles:
+  - SIG
+  - SAGE
+  - PAPI
+  - PPRI
+  - TRI
+  - GEMAPI
+  - PCAET
+  - SCoT
+  - PLUi
+  - ENS
+  - PNR
+  - EEDD
+  - CPIE
+  - CEN
+
+# +1 point : vos territoires (sert aussi au filtre des flux RSS)
+lieux:
+  - Rouen
+  - Seine-Maritime
+  - Eure
+  - Normandie
+  - Métropole Rouen Normandie
+  - Seine
+  - estuaire de la Seine
+  - Toulouse
+  - Haute-Garonne
+  - Occitanie
+  - Toulouse Métropole
+  - Garonne
+  - Nantes
+  - Loire-Atlantique
+  - Pays de la Loire
+  - Nantes Métropole
+  - Loire
+  - estuaire de la Loire
+  - Grand-Lieu
+  - Brière
+  - Castres
+  - Tarn
+  - Mazamet
+  - Albi
+  - Lagarrigue
+  - Labruguière
+  - Agout
+  - Thoré
+  - Dadou
+  - Castres-Mazamet
+
+# Score minimum pour recevoir l'offre sur Telegram
+score_minimum: 3
+
+# ---------- 5. Notation par IA (facultatif) ----------
+# Activée si le secret ANTHROPIC_API_KEY est défini.
+profil_texte: |
+  Étudiante en master GAED (géographie, aménagement, environnement et
+  développement), à la recherche d'un stage de master pour 2027.
+  Postes visés : chargée d'études ou de mission (eau, milieux aquatiques,
+  zones humides, risque inondation, biodiversité, climat, GEMAPI),
+  géomaticienne, assistante chef de projet, animation Natura 2000 / SAGE,
+  éducation à l'environnement.
+  Compétences : SIG (QGIS), cartographie, analyse spatiale, RStudio,
+  diagnostic territorial, état initial de l'environnement, étude d'impact,
+  enquête de terrain, concertation, sciences participatives.
+  Structures visées : syndicats de rivière, agences de l'eau, PNR, CEN, CPIE,
+  collectivités, bureaux d'études, associations naturalistes.
+  Territoires : Rouen/Normandie, Toulouse/Occitanie, Nantes/Loire-Atlantique,
+  Castres/Tarn. Une offre qui n'est PAS un stage doit recevoir une note basse.
+score_ia_minimum: 6
